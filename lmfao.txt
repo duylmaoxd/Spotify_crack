@@ -18,6 +18,9 @@ function Write-Emphasized ([string] $Text) {
 }
 
 function Write-Done {
+  Write-Host -Object " > " -NoNewline
+  Write-Host -Object "OK" -ForegroundColor "Green"
+  Add-Content -Path $logFileDir -Value " > dy"
   }
 
 if ($PSVersionTable.PSVersion.Major -gt $PSMinVersion) {
