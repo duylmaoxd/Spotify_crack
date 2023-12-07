@@ -46,7 +46,7 @@ if ($PSVersionTable.PSVersion.Major -gt $PSMinVersion) {
   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Comfy-Themes/Spicetify/main/Comfy/theme.js" -UseBasicParsing -OutFile "$sp_dot_dir\Comfy\theme.js"
 
   # Installing.
-  Write-Part "siêu cấp dắt mũi"
+  Write-Part "sieu cap dat mui"
   spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
   spicetify config current_theme Comfy color_scheme Comfy
   Write-Done	
